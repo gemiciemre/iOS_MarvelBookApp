@@ -19,6 +19,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        navigationItem.title = "Marvel Characters" // Navigation Controller üzerinden başlık ekleme işlemi
+        
         // Sınıfları kullanabilmek bu ikisini viewController a eşitliyoruz.
         tableView.delegate = self
         tableView.dataSource = self
